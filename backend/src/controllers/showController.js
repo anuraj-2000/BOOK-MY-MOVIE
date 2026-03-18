@@ -8,7 +8,7 @@ export const createShow = async (req, res, next) => {
 
     res.status(201).json(result.rows[0]);
   } catch (error) {
-    next(err);
+    next(error);
   }
 };
 
@@ -17,6 +17,6 @@ export const getShows = async (req, res, next) => {
     const result = await getAllShowsDB();
     res.json(result.rows);
   } catch (error) {
-    next(err);
+    next(error);
   }
 };

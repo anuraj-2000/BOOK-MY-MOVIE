@@ -1,7 +1,7 @@
 import { bookSeats } from "../services/bookingService.js";
 import pool from "../config/db.js"; // 👈 ADD THIS
 
-// Create booking
+
 export const createBooking = async (req, res) => {
   const { showId, seats } = req.body;
 
@@ -13,7 +13,7 @@ export const createBooking = async (req, res) => {
   }
 };
 
-// 👇 ADD THIS FUNCTION
+
 export const getBookingsByShow = async (req, res) => {
   const { showId } = req.params;
 

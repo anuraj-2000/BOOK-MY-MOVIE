@@ -2,7 +2,7 @@
 interface Props {
   total: number;
   selectedSeats: number[];
-  bookedSeats: number[]; // ✅ ADD THIS
+  bookedSeats: number[]; 
   setSelectedSeats: (seats: number[]) => void;
 }
 
